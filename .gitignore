@@ -16,14 +16,33 @@ scanf ("%f", &c);
 puts ("\t\tObliczanie delty");
 float y=(a*pow(x,2) + b*x + c);
 printf("Delta jest równa: %.2f",y);
-// warunek delta<0, delta=0, delta=0
-x1=(-b - √y)/(2a);
-x2=(-b + √Δ)/(2a);
-x0=(-b)/(2a);
-puts ("Pierwiastki naszego rownania to:"
-printf ("\nx1= %f",x1);
-printf ("\nx2= %f",x2);
-getchar()
-return 0
+if y < 0
+{
+  printf("Rownanie nie ma pierwiastkow\n\n");
+}
+
+if y = 0;
+{
+  printf ("Rownanie ma jedno rozwiazanie\n\n");
+  x0=(-b)/(2a);
+  printf("x0 wynosi: %.2f", x0);
+}
+
+if y > 0                                            
+{
+  printf ("Rownanie ma dwa pierwiastki");
+
+  x1=((-b - (sqrt (y)))/(2a);
+  x2=((-b + (sqrt (y)))/(2a);
+
+  printf ("x1 = %.2f \nx2 = %.2f", x1, x2);
+}
+
+else
+  printf ("Nieznany typ wprowadzonych danych\n\n");
+
+
+getchar();
+return 0;
 
 }
