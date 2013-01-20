@@ -1,17 +1,29 @@
-# Object files
-*.o
+#include <stdio.h>
+#include <math.h>
+#include <conio.h>
+#include <stdlib.h>
 
-# Libraries
-*.lib
-*.a
+int main ()
+{
+float a,b,c,x1,x2,x0;
+puts("Witaj w testowym programie\n Program do obliczania pierwiastkow rownania kwadratowego");
+printf ("\n Podaj wspolczynnik a: ");
+scanf ("%f", &a);
+printf ("\n Podaj wspolczynnik b: ");
+scanf ("%f", &b);
+printf ("\n Podaj wspolczynnik c: ");
+scanf ("%f", &c);
+puts ("\t\tObliczanie delty");
+float y=(a*pow(x,2) + b*x + c);
+printf("Delta jest równa: %.2f",y);
+// warunek delta<0, delta=0, delta=0
+x1=(-b - √y)/(2a);
+x2=(-b + √Δ)/(2a);
+x0=(-b)/(2a);
+puts ("Pierwiastki naszego rownania to:"
+printf ("\nx1= %f",x1);
+printf ("\nx2= %f",x2);
+getchar()
+return 0
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
+}
